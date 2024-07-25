@@ -1,0 +1,98 @@
+body{
+    background-color: #D6A3FB;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+h1, h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* You can change to any preferred font */
+    color: #333; /* A dark color for better readability */
+    padding: 10px 0; /* Padding for spacing */
+    animation: blink-once 2s step-start 1; /* Blink once with a 2-second duration */
+}
+
+h1 {
+    font-size: 2.5em; /* Larger font size for h1 */
+    color: black; /* Primary color for h1 */
+}
+
+h2 {
+    font-size: 2em; /* Slightly smaller font size for h2 */
+    color: black; /* Slightly different color for h2 */
+}
+
+/* Blinking effect */
+@keyframes blink-once {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+.input-section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.input-section label{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.input-section input{
+    padding: 5px;
+    margin-right: 10px;
+}
+.input-section button {
+    padding: 5px 10px;
+    background-color: #2667ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.input-section button:active {
+    box-shadow: 0 0 10px 5px #53E8D4;
+}
+
+.expenses-list{
+    margin: 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;;
+}
+th{
+    background-color: #8DFF0A;
+    color:rgb(34, 34, 29);
+}
+tfoot td{
+    font-weight: bold;
+}
+.delete-btn{
+    padding: 5px 10px;
+    background-color: rgb(198, 69, 69);
+    color: white;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+}
